@@ -1,0 +1,39 @@
+<p>listar-libro works!</p>
+<!-- bs5-card-head-foot  bs5-table-default -->
+<div class="card">
+    <div class="card-header">
+        Lista de libros de existencia
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">ISBN</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Año</th>
+                        <th scope="col">Editorial</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td scope="row">1</td>
+                        <td>Baldor</td>
+                        <td>Aurelio Baldos</td>
+                        <td>2013</td>
+                        <td>Alfa Omega</td>
+                        <td>
+                            <a routerLink="/editar-libro/1" class="a btn btn-success m-2">Editar</a>
+                            <a class="a btn btn-danger m-2">Borrar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>
