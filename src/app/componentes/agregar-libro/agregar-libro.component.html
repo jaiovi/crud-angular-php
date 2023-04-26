@@ -1,1 +1,38 @@
-<p>agregar-libro works!</p>
+<div class="card mt-4">
+    <div class="card-header">
+        Agregar Libros
+    </div>
+    <div class="card-body">
+        <form (ngSubmit)="enviarDatos()" [formGroup]="formularioDeLibros">
+            <div class="mb-3">
+                <label for="" class="form-label">Titulo</label>
+                <input formControlName="titulo" type="text"
+                class="form-control" 
+                aria-describedby="helpId" placeholder="Ingresa el titulo">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Autor</label>
+                <input formControlName="autor" type="text"
+                class="form-control" 
+                aria-describedby="helpId" placeholder="Ingresa el autor">
+                <small id="helpId" class="form-text text-muted">Nombre y Apellidos completos</small>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Año</label>
+                <input formControlName="anio" type="text"
+                class="form-control" 
+                aria-describedby="helpId" placeholder="Ingresa el año">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Editorial</label>
+                <input formControlName="editorial" type="text"
+                class="form-control" 
+                aria-describedby="helpId" placeholder="Ingresa la editorial">
+            </div>
+            <div class="btn-group" role="group" aria-label="Button broup name">
+                <button type="submit" class="btn btn-success">Agregar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
