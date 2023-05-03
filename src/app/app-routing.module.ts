@@ -6,7 +6,7 @@ import { EditarLibroComponent } from './componentes/editar-libro/editar-libro.co
 const routes: Routes = [
   {path:'',pathMatch:'full',redirectTo: 'agregar-libro'},
   {path:'agregar-libro',component:AgregarLibroComponent},
-  {path:'editar-libro',component:EditarLibroComponent},
+  {path:'editar-libro/:isbn',component:EditarLibroComponent}, //añadir
   {path:'listar-libro',component:ListarLibroComponent}
 ];
 

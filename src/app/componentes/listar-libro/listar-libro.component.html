@@ -18,15 +18,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="">
-                        <td scope="row">1</td>
-                        <td>Baldor</td>
-                        <td>Aurelio Baldos</td>
-                        <td>2013</td>
-                        <td>Alfa Omega</td>
+                    <tr *ngFor="let li of Libros; let iControl=index">
+                        <td>{{li.isbn}}</td>
+                        <td>{{li.titulo}}</td>
+                        <td>{{li.autor}}</td>
+                        <td>{{li.anio}}</td>
+                        <td>{{li.editorial}}</td>
                         <td>
-                            <a routerLink="/editar-libro/1" class="a btn btn-success m-2">Editar</a>
-                            <a class="a btn btn-danger m-2">Borrar</a>
+                            <a routerLink="/editar-libro/{{li.isbn}}" class="a btn btn-success m-2">Editar</a>
+                            <a (click)="borrarRegistro(iControl, li.isbn)" class="a btn btn-danger m-2">Borrar</a>
                         </td>
                     </tr>
                 </tbody>
