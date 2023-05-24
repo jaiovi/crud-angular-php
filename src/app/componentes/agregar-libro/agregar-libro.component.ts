@@ -17,6 +17,7 @@ export class AgregarLibroComponent {
     private crudService:CrudService, //instancia, recuerda nombrarlo bien
     private ruteador:Router){
       this.formularioDeLibros=this.formulario.group({
+        isbn:[''],
         titulo:[''],
         autor:[''],
         anio:[''],

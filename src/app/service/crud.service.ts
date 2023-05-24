@@ -31,6 +31,6 @@ export class CrudService {
   }
   EditarLibro(isbn:any, datosLibro:Libro):Observable<any>{
     //return this.clientehttp.post(this.API+isbn, datosLibro);
-    return this.clientehttp.post(this.API+isbn, datosLibro);
+    return this.clientehttp.put(this.API+isbn, datosLibro);
   }
 }

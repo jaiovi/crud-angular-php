@@ -5,6 +5,12 @@
     <div class="card-body">
         <form (ngSubmit)="enviarDatos()" [formGroup]="formularioDeLibros">
             <div class="mb-3">
+                <label for="" class="form-label">ISBN</label>
+                <input formControlName="isbn" type="text"
+                class="form-control" 
+                aria-describedby="helpId" placeholder="Ingresa el ISBN">
+            </div>
+            <div class="mb-3">
                 <label for="" class="form-label">Titulo</label>
                 <input formControlName="titulo" type="text"
                 class="form-control" 
